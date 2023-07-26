@@ -1,0 +1,249 @@
+main {
+  color: rgba(228, 229, 234, 1);
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 94px;
+  max-width: 100%;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.childrenBlock {
+  display: grid;
+  grid-template-columns: 166px 170px;
+}
+
+.secondBlock {
+  text-align: right;
+}
+
+.secondBlock button {
+  flex-shrink: 0;
+  border-style: none;
+  background: #4077f3;
+
+  padding: 21px 34px 21px 35px;
+  margin-top: 82px;
+  margin-bottom: 69px;
+
+  color: var(--light-text, #e4e5ea);
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.titleLeft {
+  color: #e4e5ea;
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 0px;
+}
+
+.welbex {
+  background-image: linear-gradient(
+    to right,
+    rgba(252, 176, 69, 1),
+    rgba(255, 63, 120, 1)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Inter;
+  display: table;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  color: #e4e5ea;
+
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.leftSubtitle {
+  color: rgba(228, 229, 234, 1);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  margin-top: 0px;
+}
+
+.titleRight {
+  color: #e4e5ea;
+  text-align: right;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 0px;
+}
+.free {
+  background: var(
+    --gradient,
+    linear-gradient(90deg, #f88b48 36.99%, #fd1d1d 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+
+  display: inline;
+}
+.cons {
+  background: var(
+    --gradient,
+    linear-gradient(90deg, #fcb045 36.99%, #f87d3b 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+
+  display: inline;
+}
+.rightSubtitle {
+  color: #e4e5ea;
+  text-align: right;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+
+.subText {
+  color: #e4e5ea;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 6px;
+}
+
+.mobileSubtitle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .secondBlock button {
+    display: none;
+  }
+  .subText {
+    display: none;
+  }
+
+  .rightSubtitle {
+    display: none;
+  }
+
+  main {
+    margin-top: 95px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    display: flex;
+
+    justify-content: center;
+  }
+  .container {
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .welbex {
+    font-size: 36px;
+  }
+
+  .titleLeft {
+    font-size: 36px;
+  }
+
+  .titleRight {
+    text-align: left;
+  }
+
+  .childrenBlock {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+  }
+
+  .mobileSubtitle {
+    display: contents;
+
+    color: #e4e5ea;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.65px;
+    text-transform: uppercase;
+  }
+
+  .listSubtitles {
+    margin-block: 7px;
+  }
+
+  .dash {
+    background: var(
+      --gradient,
+      linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    width: 10px;
+    height: 1px;
+  }
+
+  .free {
+    background: var(
+      --gradient,
+      linear-gradient(90deg, #f6a44d 36.99%, #fd1d1d 100%)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .cons {
+    background: var(
+      --gradient,
+      linear-gradient(90deg, #fcb045 36.99%, #eb7445 100%)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
